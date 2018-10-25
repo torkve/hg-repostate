@@ -1,0 +1,7 @@
+\.cache/
+\.hgbak$
+\.py[co]$
+\.rej$
+\.orig$
+\.ropeproject
+\..*\.sw[po]$
