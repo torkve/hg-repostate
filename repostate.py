@@ -15,7 +15,8 @@ testedwith = '4.6.1'
 
 @command('repostate', [], 'hg repostate', inferrepo=True)
 def repostate(ui, repo, *args, **kwags):
-    '''display current bookmarks and branch for the repo as long as
+    '''display current bookmarks and branch for the repo.
+    Also return dirty flag as exitcode.
     '''
     reslist = []
     bmks = []
