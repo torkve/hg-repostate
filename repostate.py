@@ -13,7 +13,7 @@ command = registrar.command(cmdtable)
 testedwith = '4.6.1'
 
 
-@command('repostate', [], 'hg repostate', inferrepo=True)
+@command(b'repostate', [], b'hg repostate', inferrepo=True)
 def repostate(ui, repo, *args, **kwags):
     '''display current bookmarks and branch for the repo.
     Also return dirty flag as exitcode.
