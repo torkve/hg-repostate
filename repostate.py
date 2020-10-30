@@ -31,12 +31,12 @@ def repostate(ui, repo, *args, **kwags):
     if bmks:
         for bmk in bmks:
             if bmk == active and active is not None:
-                reslist.append('*' + bmk)
+                reslist.append('*' + bmk.decode())
             else:
-                reslist.append(bmk)
+                reslist.append(bmk.decode())
 
     if branch:
-        reslist.append(branch)
+        reslist.append(branch.decode())
 
     print(' '.join(reslist))
 
